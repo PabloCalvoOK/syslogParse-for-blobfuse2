@@ -7,7 +7,7 @@
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Prerequisites](#Prerequisites)
+- [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -69,7 +69,7 @@ container_network = <container_network>
 1.- Use this command to create an file with your incrypted password
 
 ```
-echo -n "<your_password>" | openssl enc -aes-256-cbc -salt -pbkdf2 -out db_password.enc -pass pass:my_secret_key
+  echo -n "<your_password>" | openssl enc -aes-256-cbc -salt -pbkdf2 -out db_password.enc -pass pass:my_secret_key
 ```
     
 2.- Create database and application containers: Run **syslogDBCreation.sh** to create the db and app containers
@@ -77,9 +77,10 @@ echo -n "<your_password>" | openssl enc -aes-256-cbc -salt -pbkdf2 -out db_passw
 3.- Load system logs: Run **syslogLoader.sh** to load syslog to db container from Blobfuse2 containers
 
 4.- Run analysis: **syslogAnalysis.py**
-    
+```   
    podman|docker exec -it <app_container> /bin/bash
    [root@syslog_visualize app]# python3 syslogAnalysis.py
+```
 
 This script plots a error graph in the file /app/severity_plot.png.
 
@@ -88,16 +89,21 @@ This script plots a error graph in the file /app/severity_plot.png.
 A.- Create internal network:
 
 ```
-podman network create <container_network>
+  podman network create <container_network>
 ``` 
 
 B.- Connect containers to network:
 
 ```
-podman network connect <container_network> <db_container>
-podman network connect <container_network> <app_container>
+  podman network connect <container_network> <db_container>
+  podman network connect <container_network> <app_container>
 ```
 
 ## Contributing and License
 
 We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for details on our code of conduct, and the process for submitting pull requests. This project is licensed under the MIT [LICENSE](LICENSE).
+
+## Contact 
+
+- https://www.linkedin.com/in/pablocalvook/
+- https://x.com/PabloCalvoOK
