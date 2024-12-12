@@ -5,14 +5,13 @@
 - [Reporting Issues](#reporting-issues)
 - [Submitting Pull Requests](#submitting-pull-requests)
 - [Code Style](#code-style)
-- [Commit Messages](#co)
+- [Commit Messages](#commit-messages)
 - [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
-- [Getting Help](#getting-help)
 
 # Code of Conduct
 
-This project adheres to a Code of Conduct. By participating, you are expected to uphold this code. Please report any unacceptable behavior to pablo.calvo@dellteam.com.
+This project adheres to a Code of Conduct. By participating, you are expected to uphold this code. Please report any unacceptable behavior to [contact](https://github.com/PabloCalvoOK/syslogParse-for-blobfuse2/blob/main/README.md#contact).
 
 # How to Contribute
 
