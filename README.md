@@ -1,4 +1,4 @@
-## Scripts to automate the Avamar Root-to-Root Replication.
+## SyslogParse for Blobfuse2.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
